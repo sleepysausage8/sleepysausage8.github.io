@@ -1,0 +1,18 @@
+# sleepysausage8.github.io
+<html>
+<head>
+<script type="text/javascript" src="C:\Users\presidentunicorn\Downloads\counters.json></script>
+<script type="text/javascript">
+var mydata = JSON.parse(counters);
+
+function update(){
+document.getElementById('upbutton').innerHTML = mydata.1
+}
+
+</script>
+</head>
+<h1 id='counter'>0</h1>
+<p>The counter will keep going up or down and retain its value even after page reload bc it communicates with local json.</p>
+<button id='upbutton' onclick = 'update()'>up</button>
+<button id='downbutton'>down</button>
+</html>
