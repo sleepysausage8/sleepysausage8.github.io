@@ -3,14 +3,11 @@
 <head>
   <link rel="stylesheet" type="text/css" href="orangestyle.css" media="screen" />
   <script type="text/javascript">
-    var counter = {
-      one: 1
-    }
-localStorage.getItem("counter");
+  import data from ‘counters.json’;
 
 function update(){ document.getElementById("counter").innerHTML = String(counter.one)
 counter.one = counter.one+1
-localStorage.setItem("counterpos", counter);
+
 }
   </script>
 </head>
