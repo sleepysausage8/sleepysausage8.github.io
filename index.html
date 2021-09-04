@@ -4,6 +4,7 @@
   <link rel="stylesheet" type="text/css" href="orangestyle.css" media="screen" />
   <script type="text/javascript">
   import data from ‘counters.json’;
+  var couters = JSON.parse(data);
 
 function update(){ document.getElementById("counter").innerHTML = String(counters.one)
 counters.one = counters.one+1
