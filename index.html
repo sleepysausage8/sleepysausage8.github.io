@@ -1,10 +1,17 @@
-# sleepysausage8.github.io3testonepart2
+# sleepysausage8.github.iosimplecounter
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="orangestyle.css" media="screen" />
-  <script type="text/javascript" src="counters.json"></script>
   <script type="text/javascript">
-    document.getElementById("description").innerHTML = "googas"
+    var counter = {
+      one: 1
+    }
+localStorage.getItem("counter");
+
+function update(){ document.getElementById("counter").innerHTML = String(counter.one)
+counter.one = counter.one+1
+localStorage.setItem("counterpos", counter);
+}
   </script>
 </head>
 <h1 id='counter'>0</h1>
